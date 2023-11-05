@@ -8,16 +8,16 @@ export default function ListaPessoas({ navigation, route }) {
 
   const [pessoas, setPessoas] = useState([
     {
-      nome: 'João Paulo',
-      idade: '25', 
-      altura: '189',
-      peso: '80,5'
+      nome: 'Lucas Alves',
+      idade: '23', 
+      altura: '185',
+      peso: '66'
     },
     {
-      nome: 'Jorge Luiz',
-      idade: '20',
+      nome: 'Matheus Vieira',
+      idade: '30',
       altura: '180',
-      peso: '70'
+      peso: '75'
     }
   ])
   const [showModalExcluirUsuario, setShowModalExcluirUsuario] = useState(false)
@@ -134,7 +134,7 @@ export default function ListaPessoas({ navigation, route }) {
           </Dialog.Content>
           <Dialog.Actions>
             <Button onPress={hideModal}>Voltar</Button>
-            <Button onPress={handleExluirPessoa}>Tenho Certeza</Button>
+            <Button onPress={handleExluirPessoa}>Sim, Tenho Certeza!</Button>
           </Dialog.Actions>
         </Dialog>
       </Portal>
